@@ -153,18 +153,18 @@ for i := 0; i < 4; i++ {
 // 0 
 ```
 	-  Arguments evaluated at time defer is executed, not at time of called  function execution
-9.   Panic
+9. Panic
 	- Occur when program cannot continue at all
 		- Don't use when file can't be opened, unless it is critical
 		- Use for unrecoverable events - cannot obtain TCP port for web server
 	- Function will stop executing
 		- Deferred functions will still fire
 	- If nothing handles panic, program will exit
-10.    Recover
+10. Recover
 	- Used to recover from panics
 	- Only useful in deferred functions
 	- Current function will not attempt to continue, but higher functions in call stack will continue as if nothing went wrong
-11.    Pointer
+11. Pointer
 	- Pointer types use an asterisk (*) as a prefix to type pointed to be a pointer to that underlying data type.
 		- *int - a pointer to an integer
 	- Use the address of operator (&) to get address of variable
@@ -182,7 +182,7 @@ for i := 0; i < 4; i++ {
 	- Types with internal pointers
 		- All assignment operations in Go are copy operations
 		- Slices and maps contain internal pointers, so copies point to same  underlying data
-12.      Functions
+12.  Functions
 	- Basic syntax
 		- func foo() {.....}
 	- Paramerters
@@ -207,7 +207,7 @@ for i := 0; i < 4; i++ {
 			- Return using return keyword on its own
 		- Can return addresses of local variables
 			- Automatically promoted from local memory (stack) to shared memory (heap)
-13.     Interface
+13.  Interface
 	- Use many, small interface
 		- Single method interface are some of the most powerful and flexible
 			- io.Writer, io.Reader, interface{}
